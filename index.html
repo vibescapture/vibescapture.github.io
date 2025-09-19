@@ -5,6 +5,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="images/ico/logo.png" />
+		<link href="https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap" rel="stylesheet" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -25,44 +27,46 @@
 
 		<!-- Intro -->
 		<section id="intro" class="main style1 dark fullscreen">
-			<div class="content">
-					<a href="#one" class="button style2 down">Discover</a>
-				</footer>
+			<div class="content" style="position:relative; min-height:70vh;">
+				<!-- ...contenido existente... -->
 			</div>
+			<a href="#one" class="button style2 down anchored">Next</a>
 		</section>
 
 		<!-- One -->
-		<section id="one" class="main style2 right dark fullscreen">
+	<section id="one" class="main style2 left dark fullscreen">
 			<div class="content box style2">
 				<header>
 					<h2>What We Do</h2>
 				</header>
-				<p>We create high-quality visual storytelling through photography and video.  
-				Our services include:  
-				• Event & Festival Coverage 🎶  
-				• Portraits & Lifestyle 📸  
-				• Business & Branding Solutions 💼  
-				• Social Media Content 🎥  
-				Always with empathy, creativity, and punctuality.</p>
+												<p>
+													<strong>We create high-quality visual storytelling through photography and video.</strong><br>
+													Our services include:
+													<ul style="margin:0 0 0 1.2em;">
+														<li>🎶 Event &amp; Festival Coverage</li>
+														<li>📸 Portraits &amp; Lifestyle</li>
+														<li>💼 Business &amp; Branding Solutions</li>
+														<li>🎥 Social Media Content</li>
+													</ul>
+													<span style="font-weight:bold;">Empathy, creativity, and punctuality always included.</span>
+												</p>
 			</div>
 			<a href="#two" class="button style2 down anchored">Next</a>
 		</section>
 
 		<!-- Two -->
-		<section id="two" class="main style2 left dark fullscreen">
+	<section id="two" class="main style2 right dark fullscreen">
 			<div class="content box style2">
 				<header>
 					<h2>Who We Are</h2>
 				</header>
-				<p>We are a creative team based in Montreal, passionate about telling stories that connect.  
-				Through our lens, we capture the energy of concerts, the intimacy of portraits, and the identity of our Colombian and Latino roots.  
-				More than images, we deliver experiences that inspire pride and emotion.</p>
+				<p>Vibes Capture is about more than images — it’s about creating experiences. We are a Montreal-based team passionate about visual storytelling for events, businesses, and communities. Whether it’s a wedding, a festival, or a brand project, we combine professionalism, creativity, and cultural diversity to deliver visuals that inspire and connect..</p>
 			</div>
 			<a href="#work" class="button style2 down anchored">Next</a>
 		</section>
 
 		<!-- Work -->
-		<section id="work" class="main style3 primary">
+		<section id="work" class="main style3 primary" style="background: url('images/three.jpg') center center/cover no-repeat;">
 			<div class="content">
 				<header>
 					<h2>Portfolio</h2>
@@ -72,33 +76,61 @@
 
 				<!-- Gallery -->
 				<div class="gallery">
-					<article class="from-left">
-						<a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" title="Event Coverage" alt="" /></a>
+					<article class="from-left thumb-card">
+						<a href="#gallery-concerts" class="image fit gallery-link"><img src="images/thumbs/01.jpg" alt="Concerts" /></a>
+						<div class="thumb-title">Concerts</div>
 					</article>
-					<article class="from-right">
-						<a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Portrait Session" alt="" /></a>
+					<article class="from-right thumb-card">
+						<a href="#gallery-sport" class="image fit gallery-link"><img src="images/thumbs/02.jpg" alt="Sport Events" /></a>
+						<div class="thumb-title">Sport Events</div>
 					</article>
-					<article class="from-left">
-						<a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Concert Energy" alt="" /></a>
+<!-- Galerías ocultas para cada tema -->
+<div style="display:none;">
+		<div id="gallery-concerts" class="custom-gallery">
+			<a href="images/portfolio/01/01.jpg" title="Concerts"><img src="images/portfolio/01/01.jpg" alt="Concerts" /></a>
+		</div>
+		<div id="gallery-sport" class="custom-gallery">
+			<a href="images/portfolio/02/02.jpg" title="Sport Events"><img src="images/portfolio/02/02.jpg" alt="Sport Events" /></a>
+		</div>
+		<div id="gallery-social" class="custom-gallery">
+			<a href="images/portfolio/03/03.jpg" title="Social Events"><img src="images/portfolio/03/03.jpg" alt="Social Events" /></a>
+		</div>
+		<div id="gallery-podcasts" class="custom-gallery">
+			<a href="images/portfolio/04/04.jpg" title="Podcasts"><img src="images/portfolio/04/04.jpg" alt="Podcasts" /></a>
+		</div>
+		<div id="gallery-weddings" class="custom-gallery">
+			<a href="images/portfolio/05/05.jpg" title="Weddings"><img src="images/portfolio/05/05.jpg" alt="Weddings" /></a>
+		</div>
+		<div id="gallery-travels" class="custom-gallery">
+			<a href="images/portfolio/06/06.jpg" title="Travels"><img src="images/portfolio/06/06.jpg" alt="Travels" /></a>
+		</div>
+ </div>
+					<article class="from-left thumb-card">
+						<a href="#gallery-social" class="image fit gallery-link"><img src="images/thumbs/03.jpg" alt="Social Events" /></a>
+						<div class="thumb-title">Social Events</div>
 					</article>
-					<article class="from-right">
-						<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Brand Content" alt="" /></a>
+					<article class="from-right thumb-card">
+						<a href="#gallery-podcasts" class="image fit gallery-link"><img src="images/thumbs/04.jpg" alt="Podcasts" /></a>
+						<div class="thumb-title">Podcasts</div>
 					</article>
-					<article class="from-left">
-						<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="Latino Identity" alt="" /></a>
+					<article class="from-left thumb-card">
+						<a href="#gallery-weddings" class="image fit gallery-link"><img src="images/thumbs/05.jpg" alt="Weddings" /></a>
+						<div class="thumb-title">Weddings</div>
 					</article>
-					<article class="from-right">
-						<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="Festival Vibes" alt="" /></a>
+					<article class="from-right thumb-card">
+						<a href="#gallery-travels" class="image fit gallery-link"><img src="images/thumbs/06.jpg" alt="Travels" /></a>
+						<div class="thumb-title">Travels</div>
 					</article>
 				</div>
 			</div>
+			<a href="#contact" class="button style2 down anchored">Next</a>
 		</section>
 
 		<!-- Contact -->
-		<section id="contact" class="main style3 secondary">
+		<section id="contact" class="main style3 secondary" style="background: url('images/four.jpg') center center/cover no-repeat;">
 			<div class="content">
 				<header>
-					<h2>Say Hello</h2>
+					<h2>Contact us</h2>
 					<p>We’d love to bring your vision to life through powerful audiovisual storytelling.  
 					Reach out and let’s create together.</p>
 				</header>
@@ -128,12 +160,13 @@
 				<li><a href="mailto:vibescapture.a@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 			</ul>
 			<ul class="menu">
-				<li>&copy; Vibes Capture</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+				<li>&copy; Vibes Capture</li><li>Design: <a href="https://vibescapture.com">laliz</a></li>
 			</ul>
 		</footer>
 
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
+		<script src="https://kit.fontawesome.com/4b8b8b8b8b.js" crossorigin="anonymous"></script>
 		<script src="assets/js/jquery.poptrox.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>

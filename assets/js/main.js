@@ -94,6 +94,31 @@
 				usePopupNav: true
 			});
 
+			// Galerías personalizadas por tema
+			$('.gallery-link').on('click', function(e) {
+				e.preventDefault();
+				var target = $(this).attr('href');
+				var $customGallery = $(target);
+				if ($customGallery.length) {
+					$customGallery.poptrox({
+						usePopupCaption: true,
+						usePopupNav: true,
+						selector: 'a',
+						popupCloserText: '',
+						popupLoaderText: '',
+						popupSpeed: 300,
+						fadeSpeed: 300,
+						overlayColor: '#1c1c1c',
+						overlayOpacity: 0.85,
+						windowMargin: 50,
+						usePopupDefaultStyling: false,
+						usePopupEasyClose: true,
+						usePopupForceClose: true
+					});
+					$customGallery.find('a').first().trigger('click');
+				}
+			});
+
 			// Hack: Adjust margins when 'small' activates.
 				breakpoints.on('>small', function() {
 					$gallery.each(function() {
