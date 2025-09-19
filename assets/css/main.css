@@ -126,8 +126,17 @@ input, select, textarea {
 }
 
 /* Contact us section text color */
-#contact, #contact h2, #contact p, #contact label, #contact input, #contact textarea {
+/* Contact us section text color */
+#contact, #contact h2, #contact p, #contact label {
 	color: #fff;
+}
+#contact input, #contact textarea {
+	color: #111 !important;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+#contact input::placeholder, #contact textarea::placeholder {
+	color: #444 !important;
 }
 
 /* Botones flotantes Instagram y TikTok */

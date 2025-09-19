@@ -100,6 +100,8 @@
 				var target = $(this).attr('href');
 				var $customGallery = $(target);
 				if ($customGallery.length) {
+					// Mostrar el div temporalmente
+					$customGallery.show();
 					$customGallery.poptrox({
 						usePopupCaption: true,
 						usePopupNav: true,
@@ -113,7 +115,10 @@
 						windowMargin: 50,
 						usePopupDefaultStyling: false,
 						usePopupEasyClose: true,
-						usePopupForceClose: true
+						usePopupForceClose: true,
+						onPopupClose: function() {
+							$customGallery.hide();
+						}
 					});
 					$customGallery.find('a').first().trigger('click');
 				}
